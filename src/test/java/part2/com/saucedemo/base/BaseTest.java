@@ -15,10 +15,10 @@ public class BaseTest {
 
     @BeforeClass
     public void setUp(){
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(); //define this so that I'm able to use ChromeDriver
         driver.manage().window().maximize();
         driver.get(url);
-        basePage = new BasePage();
+        basePage = new BasePage(); //define this so that I'm able to use from inside BasePage
         basePage.setDriver(driver);
         loginPage = new LoginPage();
     }

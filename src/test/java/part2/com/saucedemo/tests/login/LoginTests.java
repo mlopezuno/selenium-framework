@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import part2.com.saucedemo.base.BaseTest;
 
 public class LoginTests extends BaseTest {
-    private static final Logger log = LoggerFactory.getLogger(LoginTests.class);
+    //private static final Logger log = LoggerFactory.getLogger(LoginTests.class);
 
     @Test
     public void testLoginErrorMessage(){

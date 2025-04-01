@@ -5,11 +5,13 @@ import org.openqa.selenium.By;
 public class LoginPage extends BasePage{
     //We extend to the super class BasePage to inherit
 
+    //Selectors specific to LoginPage
     private By usernameField = By.id("user-name");
     private By passwordField = By.id("password");
     private By loginButton = By.id("login-button");
     private By errorMessage = By.cssSelector("#login_button_container h3");
 
+    //Methods specific to LoginPage
     public void setUsername(String username){
         set(usernameField, username);
     }
