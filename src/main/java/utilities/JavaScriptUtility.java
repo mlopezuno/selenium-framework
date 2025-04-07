@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 
 public class JavaScriptUtility extends Utility{
     //This is a common class for Java exec methods only
+    //Basically we can have a WebElement-Method and Javascript-Method
 
     public static void scrollToElementJS(By locator){ //this is a JavaScript based function
         WebElement element = driver.findElement(locator);
@@ -22,6 +23,8 @@ public class JavaScriptUtility extends Utility{
 
     public static void clickJS(By locator){
         WebElement element = driver.findElement(locator);
+
+        //This is the same as I did in the method above, we can do it both ways
         JavascriptExecutor executor = (JavascriptExecutor) driver;
         executor.executeScript("arguments[0].click();", element);
     }
