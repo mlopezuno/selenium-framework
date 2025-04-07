@@ -1,4 +1,4 @@
-package com.saucedemo.pages;
+package com.base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -28,5 +28,13 @@ public class BasePage {
 
     protected void click(By locator){
         find(locator).click();
+    }
+
+    public static void delay(int miliseconds){//Will delay for an amount of seconds
+        try{
+            Thread.sleep(miliseconds);
+        } catch (InterruptedException exc) {
+            exc.printStackTrace();
+        }
     }
 }

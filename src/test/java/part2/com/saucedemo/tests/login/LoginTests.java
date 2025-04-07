@@ -1,8 +1,5 @@
 package part2.com.saucedemo.tests.login;
 
-import com.saucedemo.pages.BasePage;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import part2.com.saucedemo.base.BaseTest;

@@ -1,8 +1,9 @@
 package com.saucedemo.pages;
 
+import com.base.BasePage;
 import org.openqa.selenium.By;
 
-public class LoginPage extends BasePage{
+public class LoginPage extends BasePage {
     //We extend to the super class BasePage to inherit
 
     //Selectors specific to LoginPage
